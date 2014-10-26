@@ -1,0 +1,15 @@
+doctype transitional
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title= subject
+  body(bgcolor='FEFEFD', style='margin:0;')
+    block action
+    table(border='0', cellpadding='0', cellspacing='0', height='100%', width='100%')
+      tr
+        td(align='center', valign='top')
+          table(border='0', cellpadding='20', cellspacing='0', width='600')
+            tr
+              td(align='center', valign='top')
+                block content
+    div(style='color:#fefefd; display:none; font-size:1px; line-height:1px; visibility:hidden;')= moment.utc().format()
