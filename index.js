@@ -7,6 +7,7 @@ exports.sendInvitation = function (league, recipient, token, callback) {
 
   var html = render('invitation', {
     token: token,
+    league: league,
     applicationUrl: env.APPLICATION_URL
   });
 
