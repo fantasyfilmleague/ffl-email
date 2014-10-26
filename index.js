@@ -3,7 +3,7 @@ var render = require('./lib/render');
 var env = require('ffl-utils').environment;
 
 exports.sendInvitation = function (league, recipient, token, callback) {
-  var subject = 'League Invitation';
+  var subject = 'You are invited to join "' + league.name + '"';
 
   var html = render('invitation', {
     token: token,
